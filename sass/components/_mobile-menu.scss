@@ -17,10 +17,11 @@
   }
 
   .mobile__modal-close {
-    margin-top: 10px;
-    margin-left: 340px;
     fill: $secondaryColor;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    position: absolute;
+    top: 2%;
+    right: 5%;
   }
   &:active,
   &:hover,
@@ -31,6 +32,7 @@
   .mobile__modal__menu {
     margin-bottom: 302px;
     margin-left: 40px;
+    margin-top: 50px;
   }
 
   .mobile__modal__menu-list {
@@ -85,8 +87,9 @@
 
   .mobile__modal__social-list {
     display: flex;
-    margin-top: 100px;
+    margin-top: 130px;
     padding: 0;
+    margin-left: 30px;
   }
   .mobile__modal__social-item {
     margin-right: 10px;
