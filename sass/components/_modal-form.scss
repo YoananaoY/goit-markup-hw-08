@@ -1,0 +1,128 @@
+.icon__container:hover,
+.form__name:hover,
+.form__email:hover,
+.form__telephone:hover {
+  border-color: $accentColor;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form__container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 448px;
+  padding-top: 10px;
+  position: relative;
+  border: 0px solid;
+  max-height: 20%;
+  &:hover,
+  &:focus {
+    fill: $accentColor;
+  }
+}
+
+.form__icon {
+  margin: 15px;
+  z-index: 99;
+  position: absolute;
+}
+
+.form__comment {
+  resize: none;
+}
+
+textarea {
+  min-width: 448px;
+  min-height: 120px;
+}
+
+.form__name,
+.form__telephone,
+.form__email {
+  height: 40px;
+  min-width: 448px;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  font-size: 14px;
+  padding-left: 42px;
+}
+
+.form__comment {
+  height: 40px;
+  width: 448px;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  font-size: 12px;
+  margin-top: 4px;
+}
+.contact__form {
+  display: block;
+  padding: 40px;
+}
+
+.form__heading {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.form__label {
+  font-family: $primaryFont;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  text-align: left;
+  color: $textColor;
+  margin-left: 0;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+.form__checkbox {
+  margin-left: 15px;
+  margin-right: 8px;
+  height: 15px;
+  width: 15px;
+}
+.form__accept-container {
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  align-items: center;
+}
+
+.form__link {
+  color: $accentColor;
+}
+
+.form__label--link {
+  font-size: 14px;
+}
+
+textarea {
+  padding: 15px;
+
+}
+
+textarea::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+  font-family: $primaryFont;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
+label {
+  position: relative;
+}
+
+.icon__container {
+  width: 448px;
+  height: 40px;
+  position: relative;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+}

@@ -1,0 +1,93 @@
+.job__container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  .job__heading {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: $secondaryColor;
+    display: flex;
+    justify-content: center;
+    padding-top: 94px;
+    margin-bottom: 40px;
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+      text-decoration-color: $accentColor;
+      text-decoration-thickness: 3px;
+      transition: text-decoration-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+
+  .job__section {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .job__img {
+    justify-content: center;
+    display: flex;
+    margin-bottom: 94px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .job__list {
+    list-style: none;
+    padding: 0;
+    display: inline-flex;
+    gap: 30px;
+  }
+
+  .job__list-item {
+    width: 370px;
+    overflow: hidden;
+    list-style-type: none;
+  }
+
+  .job__description-box {
+    width: 100%;
+    background-color: $bgJobColor;
+    text-align: center;
+    width: 370px;
+    height: 70px;
+    top: 1425px;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .job__description {
+    color: $primaryColor;
+    text-transform: uppercase;
+    line-height: 1.17;
+    padding: 27px 0;
+    font-family: $primaryFont;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-align: center;
+  }
+}
+
+.job__container {
+  display: block;
+
+  @media (max-width: 767px) {
+    display: none;
+  }
+
+@media (max-width: 1199px) {
+  display: none;
+}
+}
+
+

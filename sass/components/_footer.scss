@@ -1,0 +1,368 @@
+.footer__mail-link {
+  font-weight: 400;
+  font-size: 14px;
+  color: $textFooterPlaceholder;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-decoration: underline;
+  margin: 0;
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+    text-decoration-color: $accentColor;
+    text-decoration-thickness: 3px;
+    transition: text-decoration-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.footer__phone-link {
+  color: $textFooterPlaceholder;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  margin: 0;
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+    text-decoration-color: $accentColor;
+    text-decoration-thickness: 3px;
+    transition: text-decoration-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.footer__street {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: $primaryColor;
+  align-items: flex-start;
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+    text-decoration-color: $accentColor;
+    text-decoration-thickness: 3px;
+    transition: text-decoration-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+footer {
+  height: auto;
+  width: 100%;
+  max-width: 1600px;
+  background-color: $footerBackground;
+}
+
+address {
+  display: flex;
+  justify-content: flex-start;
+  max-width: 1170px;
+}
+
+.footer__container-logo {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 72px;
+}
+
+.footer__street {
+  cursor: pointer;
+}
+.footer__logo-link {
+  text-decoration: none;
+  display: inline-flex;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.19;
+  font-family: $secondaryFont;
+  font-style: normal;
+  margin: 0;
+}
+
+.footer__heading {
+  display: flex;
+  color: $primaryColor;
+  font-family: $primaryFont;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  padding-top: 10px;
+  text-transform: uppercase;
+  margin-top: 72px;
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+    text-decoration-color: $accentColor;
+    text-decoration-thickness: 3px;
+    transition: text-decoration-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.footer__box {
+  padding-left: 70px;
+}
+
+.footer__icon {
+  height: 44px;
+  width: 44px;
+  margin-top: 16px;
+  border-radius: 50px;
+  background-color: $borderColor;
+  fill: $primaryColor;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    background-color: $accentColor;
+    border-radius: 50px;
+  }
+}
+
+.footer__street {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: $primaryColor;
+}
+
+.footer__icon-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 10px;
+  padding: 0;
+}
+.footer__newsletter {
+  height: 50px;
+  width: 358px;
+  border-radius: 4px;
+  border: 1px solid $borderColor;
+  font-size: 12px;
+  background: $footerBackground;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  font-weight: 400;
+  font-size: 16px;
+  color: $primaryColor;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  padding-left: 16px;
+  margin-right: 12px;
+}
+.footer__box-newsletter {
+  display: flex;
+  font-family: $primaryFont;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  padding-top: 10px;
+  text-transform: uppercase;
+  max-width: 570px;
+  flex-direction: column;
+}
+.footer__heading--newsletter {
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.newsletter__container {
+  display: inline-flex;
+  align-items: baseline;
+}
+
+.newsletter__box {
+  display: flex;
+  margin: 40px;
+}
+
+.icon__send {
+  fill: $primaryColor;
+  margin-left: 24px;
+  padding: 0;
+}
+
+.form__button--signup {
+  margin: 0;
+  padding-left: 42px;
+  margin-top: 0;
+}
+.form__button--send {
+  margin-top: 0;
+}
+.form__button {
+  background-color: $accentColor;
+  cursor: pointer;
+  border-radius: 4px;
+  border-color: rgba(33, 33, 33, 0.2);
+  color: $primaryColor;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  margin: 0px auto;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+}
+
+@media (max-width: 767px) {
+  
+  .footer-address{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer__box {
+    padding-left: 0;
+  }
+  .footer__box-newsletter {
+    padding: 0;
+    }
+
+    .footer__heading{
+      justify-content: center;
+    }
+
+.footer__icon-item {
+margin: 0;
+}
+
+.footer__icon-list {
+  justify-content: center;
+
+}
+
+.footer__container-logo {
+  align-items: center;
+  padding-top: 60px;
+  width: 100%;
+
+}
+
+  .footer__container-logo {
+    margin-top: 56px;
+
+  }
+
+  .footer__heading {
+    margin-top: 20px;
+  }
+
+  .footer__heading--newsletter {
+    justify-content: center;
+    margin-top: 56px;
+
+  }
+
+  footer {
+    height: auto;
+    
+  }
+
+  address {
+    max-width: 100%;
+    display: block;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .newsletter__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-bottom: 60px;
+  }
+
+
+.footer__newsletter {
+  justify-content: center;
+margin: 0;
+}
+
+}  
+
+@media (max-width: 1199px) {
+  .footer__box {
+    padding-left: 0;
+    margin: 0;
+    align-items: center;
+  }
+  .footer__box-newsletter {
+    padding: 0;
+    }
+
+    .footer__heading{
+      justify-content: center;
+    }
+
+.footer__icon-list {
+  justify-content: center;
+
+}
+
+.footer__container-logo {
+  align-items: center;
+  padding-top: 20px;
+  margin: 0;
+
+}
+
+  .footer__container-logo {
+    margin-top: 56px;
+  }
+
+  .footer__heading--newsletter {
+    justify-content: center;
+    margin-top: 56px;
+
+  }
+
+  footer {
+    height: auto;
+    
+  }
+
+  address {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .newsletter__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-bottom: 60px;
+  }
+
+
+.footer__newsletter {
+  justify-content: center;
+  margin: 0;
+}
+
+}

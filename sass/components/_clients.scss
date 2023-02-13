@@ -1,0 +1,129 @@
+.client__container {
+  height: 372px;
+  max-width: 100%;
+
+  .client__heading {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: $secondaryColor;
+    display: flex;
+    justify-content: center;
+    padding-top: 94px;
+    margin-bottom: 40px;
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+      text-decoration-color: $accentColor;
+      text-decoration-thickness: 3px;
+      transition: text-decoration-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+
+  .client__list {
+    padding: 0;
+    height: 184px;
+    max-width: 1170px;
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+  }
+
+  .client__item {
+    height: 92px;
+    width: 170px;
+    border: 1px solid $borderColor;
+    border-radius: 4px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      border: 1px solid $accentColor;
+    }
+  }
+
+  .client__link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: $accentColor;
+    transition: fill 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .client__icon {
+    height: 60px;
+    width: 106px;
+    fill: $iconColor;
+    &:hover,
+    &:focus {
+      fill: $accentColor;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .client__container {
+    height: auto;
+
+
+    .client__heading {
+      font-size: 24px;
+      padding-top: 40px;
+    }
+
+    .client__list {
+      display: block;
+      flex-direction: column;
+      height: auto;
+      columns: 2;
+    }
+
+    .client__item {
+      width: 100%;
+      height: 70px;
+      margin-bottom: 20px;
+    }
+
+    .client__icon {
+      width: 80px;
+      height: 40px;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .client__container {
+    height: auto;
+
+
+    .client__heading {
+      font-size: 24px;
+      padding-top: 40px;
+    }
+
+    .client__list {
+      display: block;
+      flex-direction: column;
+      height: auto;
+      columns: 3;
+      margin: 15px;
+    }
+
+    .client__item {
+      width: 100%;
+      height: 70px;
+      margin-bottom: 20px;
+    }
+
+    .client__icon {
+      width: 80px;
+      height: 40px;
+    }
+  }
+}

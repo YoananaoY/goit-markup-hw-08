@@ -1,0 +1,110 @@
+.baner {
+  background-image: linear-gradient($gradientOverlay, $gradientOverlay),
+    url(../images/photo00.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-weight: 900;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  height: 600px;
+  max-width: 1600px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+  .baner__content {
+    font-family: $primaryFont;
+    font-size: 44px;
+    width: 696px;
+    text-transform: uppercase;
+    color: $primaryColor;
+    text-align: center;
+    margin-bottom: 30px;
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+      text-decoration-color: $accentColor;
+      text-decoration-thickness: 3px;
+      transition: text-decoration-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+}
+.mobile__menu-button {
+  display: none;
+}
+
+.filter__container {
+  padding: 3%;
+  display: flex;
+  justify-content: center;
+  margin-top: 94px;
+  padding: 0;
+
+  .filter__list {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    list-style: none;
+    display: inline-flex;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .btn {
+    background-color: $bgTeamColor;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 10px 26px;
+    text-decoration: none;
+    color: $secondaryColor;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    font-weight: 500;
+    &:hover {
+      background-color: $accentColor;
+      text-decoration: none;
+      color: $primaryColor;
+      box-shadow: 4px 4px 6px 0px $thirdShadowColor, 0px 4px 4px 0px #0000000f,
+        0px 1px 1px 0px $secondaryShadowColor;
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  header {
+    padding: 0;
+  }
+
+  .baner {
+    height: 300px;
+    font-size: 36px;
+
+    .baner__content {
+      width: 100%;
+      font-size: 26px;
+    }
+  }
+  .mobile__menu-button {
+    display: flex;
+  }
+
+  .menu__icon {
+    margin: 0;
+  }
+
+  .filter__container {
+    .filter__list {
+      font-size: 14px;
+    }
+
+    .btn {
+      font-size: 14px;
+      padding: 10px 20px;
+    }
+  }
+}
