@@ -64,6 +64,13 @@
 
 @media (max-width: 1200px){
   .modal{
-    width: 450px;
+    width: 100%;
   }
 }
+
+@media (min-width: 1200px){
+  .modal{
+    width: 100%;
+  }
+}
+
